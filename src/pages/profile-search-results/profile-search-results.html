@@ -1,0 +1,13 @@
+<ion-header>
+
+  <ion-navbar color="dark">
+    <ion-title>Results</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <search-results [user]="user" text-wrap></search-results>
+  <repositories *ngFor="let repo of repositories" [repository]="repo"></repositories>
+</ion-content>
